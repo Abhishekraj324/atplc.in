@@ -1,9 +1,301 @@
-p{
+*{
+    margin: 0px;
+    padding: 0px;
+    /* width: auto; */
+}
+
+    .n1 {
+        position: fixed;
+        display: flex ;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 7 rem;
+        background-color: rgb(15, 11, 11); 
+    z-index: 100000;
+    }
+    .n2{
+        background-image: url(bg.jpg);
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        z-index: -1;
+    }
+.n1 h1{
+    color: rgb(240, 12, 12);
+    font-size: 2 rem;
+    vertical-align: middle ;
+
+}
+#item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+#item li{
+    list-style: none;
+    padding-right: 40px;
+}
+#item li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+#item li a:hover{color: blueviolet;
+cursor: pointer;}
+.n1 .overlay{
+    background:  #171819;
+    height: 100%;
+    width: 100%;
+    opacity: o.5;
+}
+ .mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+text-align: center;
+}
+.mid p{
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    
+}.mid h1{
+    color: white;
+    font-size: 4 rem;
+    text-transform: uppercase;
+    
+}.mid .btn{
+    margin-top: 2rem;
+}
+
+.mid .btn a{
+    text-decoration:none;
+    text-transform: uppercase;
+}
+.mid .btn a.btn1{
+    color: rgb(212, 248, 5);
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 1px;
+}
+.mid .btn a.btn1:hover{
+    background: rgb(146, 136, 136);
+}
+
+.details{
+
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    /* padding: 5rem 10rem; */
+    background-color: rgb(87, 79, 79);
+}.details .a h1{font-size: 2rem;
+    color: whitesmoke;
+    padding-bottom: 4rem;
+}  
+.details .a{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}.details .b{
+    width: 45%;
+}
+.details .a p{font-size: 1rem; 
+    padding-bottom: 3rem;
+    
+    color: aliceblue;}
+    .details .a a{
+        color: white;
+        background: #cc300d;
+        padding: 0.6rem ;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+    }
+    .details .b h2{font-size: 2.5rem;
+    padding-bottom: 2rem;
+color: white;
+}.details .b h4{
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+.details .b p{
+    font-size: 1rem;
     color: red;
+} 
+section{
+    padding: 3rem 2%;
 }
-#a2{
-    color: aqua;
+.heading{
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding: 2rem;
+    border: #cc300d;
 }
-.blue-text{
-    color: blue;
+span{
+    font-size: 2rem;
+    color: #cc300d;
+    text-transform: uppercase;
+    background-color: black;
+    padding: .5rem 1.5rem;
+    border: 1rem solid red;
+    border-radius: 0.5rem;
 }
+.box-container{  
+   display: flex;
+   flex-direction: row;
+}
+.box{
+    height: 25rem;
+}
+.image{
+    height: 18rem;
+    width: 100%;
+     
+padding: 2rem 0.5rem;}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}.box-container h3{
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #e71010;
+}
+.box-container p{
+    color: #107ce7;
+    }
+    
+    .box-container h4{
+        color: red;
+        }
+
+
+        @media(max-width:600px){
+
+
+            .footer .imagescontainer{
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        
+
+
+
+        .imagescontainer{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            margin: 40px 20px 0 20px;
+        }
+        .imagescontainer .imagebox{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .imagescontainer .imagebox .dream{
+            display: flex;
+            flex-direction: column;
+            width: 32.5%;
+             height: 32.5%;
+        }
+        .imagescontainer .imagebox .dream img{
+            width: 100%;
+            height: 100%;
+            padding-bottom: 15px;
+            border-radius: 5px;
+        }
+
+        #loginpage{
+            
+            background-color: #0e1013;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 600px;
+}
+        #login{
+            /* position: relative;
+            left: 10px;
+            top: 0px; */
+            margin: 80px;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            width: auto;
+            height: 420px;
+        }
+        
+        .map{
+            /* position: relative;
+            left: 10px;
+            top: 0px; */
+            padding: 20px; 
+        }
+        
+        #login h2{
+            margin-bottom: 10px;
+            font-size: 2rem;
+            text-align: center;
+            color: red;
+        }input{
+            width: 300px;
+            margin: 8px 0px ;
+            padding: 8px;
+        }
+        input[type="submit"]{
+            background-color: #e71010;
+            color: white;
+        }
+        .error{
+            color: red;
+            margin: 0px;
+            text-align: left;
+        }
+       
+
+        .map h2{
+            font-size: 2.5rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+        .map p{
+            font-size: 2.5 rem;
+            color: aliceblue;
+            padding: 10px;
+            
+        }.map a{
+            text-decoration: none;
+            color: #e71010;
+            font-size: 2rem;
+        }
+@media screen and (max-width:600px) {
+    .n1 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .n1 a{
+        font-size: 10px;
+    }
+    
+} 
+    

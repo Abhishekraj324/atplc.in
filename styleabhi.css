@@ -1,0 +1,322 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* background-color: rgb(204, 25, 204); */
+}
+
+
+
+
+header{
+    position: sticky;
+    left: 0px;
+    top: 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+header h1{
+    color: white;
+}
+header .ul li {
+  padding: 10px;
+    list-style: none;
+}
+header .ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+
+header .ul li a:hover{
+    background-color: white;
+    color: black;
+}
+header .ul {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.n2{
+    background-image: url(bg.jpg);
+    border-radius: 10px;
+    width:auto;
+    height: 600px;
+    background-size: cover;
+
+}
+
+
+.mid{
+    /* margin: auto; */
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+text-align: center; 
+}
+.mid p{
+    color: white;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    
+}.mid h1{
+    color: white;
+    font-size: 4 rem;
+    text-transform: uppercase;
+    
+}.mid button{
+    margin-top: 2rem;
+}
+
+.mid button a{
+    text-decoration:none;
+    text-transform: uppercase;
+}
+.mid button a{
+    color: rgb(41, 43, 33);
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 1px;
+}
+.mid button a:hover{
+    background: rgb(146, 136, 136);
+    columns: red;
+} 
+
+
+.details{
+
+    /* width: 100%; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+    background-color: rgb(87, 79, 79);
+    border-radius: 10px;
+    height: 400px;
+}
+
+.details .a h1{
+    font-size: 2rem;
+    color: whitesmoke;
+    padding-bottom: 4rem;
+}  
+.details .a{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}.details .b{
+    width: 45%;
+}
+.details .a p{
+    font-size: 1rem; 
+    padding-bottom: 3rem;
+    
+    color: aliceblue;}
+    .details .a a{
+        color: white;
+        background: #cc300d;
+        padding: 0.6rem ;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+    }
+    .details .b h2{font-size: 2.5rem;
+    padding-bottom: 2rem;
+color: white;
+}.details .b h4{
+    font-size: 1rem;
+    color: white;
+    padding-bottom: 1rem;
+}
+.details .b p{
+    font-size: 1rem;
+    color: red;
+}
+ h3{
+    text-align: center;
+    font-size: 3rem;
+}
+section{
+    background-color: rgb(243, 230, 230);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagescontainer h3 {
+    color: red;
+}
+
+
+section .img{
+    height: 650px;
+    width: 400px;
+    padding: 50px;
+    border: 1px solid white;
+}
+section .img img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+.dream{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dream li{
+    margin-left: 20px;
+    padding: 20px;
+    list-style: none;
+}
+
+.dream li img{
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+/* #loginpage{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+} */
+
+
+
+#loginpage{
+            
+    background-color: #0e1013;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+}
+#login{
+    /* position: relative;
+    left: 10px;
+    top: 0px; */
+    margin: 80px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: auto;
+    height: 420px;
+}
+
+.map{
+    /* position: relative;
+    left: 10px;
+    top: 0px; */
+    padding: 20px; 
+}
+
+#login h2{
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+}input{
+    width: 300px;
+    margin: 8px 0px ;
+    padding: 8px;
+}
+input[type="submit"]{
+    background-color: #e71010;
+    color: white;
+}
+.error{
+    color: red;
+    margin: 0px;
+    text-align: left;
+}
+
+
+.map h2{
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 10px;
+}
+.map p{
+    font-size: 2.5 rem;
+    color: aliceblue;
+    padding: 10px;
+    
+}.map a{
+    text-decoration: none;
+    color: #e71010;
+    font-size: 2rem;
+}
+
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .ul li a{
+        flex-direction: column;
+        align-items: center;
+        font-size: 10px;
+    }
+
+    /* .n2{
+       flex-direction: column;
+       justify-content: center; 
+        width: 60%;
+        height: 50vh;
+       
+       
+    } */
+
+    .details{
+        flex-direction: column;
+        align-items: center;
+        /* font-size: 10px; */
+    }
+    .details .a p{
+        /* display:flex; */
+        margin: 0%;
+       padding: 0%;
+        font-size: 10px;
+    }
+    .details .b h2{
+        font-size: 1rem;
+
+    }
+
+    #features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dream{
+
+        flex-direction: column;
+        align-items: center;
+    }
+    #loginpage{
+
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
