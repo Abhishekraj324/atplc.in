@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Task-16</title>
+    <style>
+        body {
+            background-color: rgb(255, 228, 196);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        img {
+            width: 95px;
+            height: 95px;
+            display: block;
+            margin: 0px auto;
+
+        }
+
+        button {
+            display: block;
+            margin: 5px auto;
+        }
+
+        .container {
+            text-align: center;
+            color: rgb(151, 8, 8);
+        }
+
+        #time {
+            font-size: 30px;
+        }
+
+        #box {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color:brown; text-align: center; text-decoration: underline;">javaScript:DOM & Event</h1>
+
+    <h2 style="text-align: center; color: blueviolet;">1.To check Date and Time:-</h2>
+    <div class="container">
+        <h3>Hello,Everyone</h3>
+        <h3>Current Date and Time are:</h3>
+        <span id="time"></span>
+    </div>
+
+    <h2 style="text-align: center; color: blueviolet;">2.Basic Information Form</h2>
+    <center>
+        <form>
+            <h2>Fill  this Form:-</h2>
+            <div>
+                <label id="name-label" for="name">NAME</label>
+                <input type="text" name="name" id="name" placeholder="Enter your Name" required><br>
+
+                <label id="email-label" for="email">EMAIL</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required><br><br>
+
+                <label id="number-label" for="number">NUMBER</label>
+                <input type="number" name="number" id="number" placeholder="Enter your Mobile No." required><br><br>
+
+
+
+                <label id="number-age" for="number">age </label>
+                <input type="number" name="age" id="age" placeholder="age" max="100" min="0"><br><br>
+
+                <button type="button" onclick="forming()">SUBMIT</button>
+
+
+        </form>
+    </center>
+
+    <div id="box"></div>
+
+    <h2 style="text-align: center; color: blueviolet;">3.Change the image by clicking on button:-</h2>
+    <img src="image3.jpg" alt="" id="img1">
+    <button id="image" onclick="changeImage()">Change img</button>
+
+    <h2 style="text-align: center; color: rgb(15, 3, 26);">4.Increase and Decrease the size of  text  by clicking
+        on button:-</h2>
+    <p id="para" style=" font-size:20px;text-align: center; color: green; border: 2px solid black; ">Welcome</p>
+    <button onclick="Change()">Font+</button>
+    <button onclick="Change2()">Font-</button>
+
+
+
+    <script>
+
+        // Program to check date and time on web Page
+
+        function clock() {
+            time.innerHTML = new Date();
+        }
+        setInterval(clock, 1000);
+
+
+        // Program for Basic Form
+        
+        function forming() {
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const number = document.getElementById("number").value;
+            const age = document.getElementById("age").value;
+
+
+
+
+            const box = document.getElementById("box");
+
+            const nameElement = document.createElement("p");
+            nameElement.innerHTML = "Name: " + name;
+            box.appendChild(nameElement);
+
+            const emailElement = document.createElement("p");
+            emailElement.innerHTML = "Email: " + email;
+            box.appendChild(emailElement);
+
+            const phoneElement = document.createElement("p");
+            phoneElement.innerHTML = "Phone: " + number;
+            box.appendChild(phoneElement);
+            const ageElement = document.createElement("p");
+            ageElement.innerHTML = "Age: " + age;
+            box.appendChild(ageElement);
+
+        }
+        // Program to change the image on button click    
+
+        let x = 0;
+        function changeImage() {
+            if (x == 0) {
+                document.getElementById('img1').src = 'image2.jpg';
+                x++;
+            }
+            else {
+                document.getElementById('img1').src = 'image3.jpg';
+                x = 0;
+            }
+        }
+
+        // Program to increase and decrease the font size of text on button click
+
+        const fonts = document.getElementById("para");
+
+        let fontSize = 20;
+
+        function Change() {
+
+            fontSize += 2;
+
+            fonts.style.fontSize = `${fontSize}px`;
+        };
+        function Change2() {
+
+            fontSize -= 2;
+
+            fonts.style.fontSize = `${fontSize}px`;
+        };
+
+    </script>
+</body>
+
+</html>
